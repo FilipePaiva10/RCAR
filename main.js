@@ -8,6 +8,22 @@ app.get('/ada/', async(req, res) => {
     res.sendFile(path.join(__dirname, 'public', 'index.html'));
 });
 
+app.get('/ada/etapas/1/', async(req, res) => {
+    res.sendFile(path.join(__dirname, 'public', 'ada/steps/step_1.html'));
+});
+
+app.get('/ada/etapas/2/', async(req, res) => {
+    res.sendFile(path.join(__dirname, 'public', 'ada/steps/step_2.html'));
+});
+
+app.get('/ada/etapas/3/', async(req, res) => {
+    res.sendFile(path.join(__dirname, 'public', 'ada/steps/step_3.html'));
+});
+
+app.get('/ada/etapas/4/', async(req, res) => {
+    res.sendFile(path.join(__dirname, 'public', 'ada/steps/step_4.html'));
+});
+
 app.listen(8080, () => {
     console.log("Server successfully running on port 8080");
 });
