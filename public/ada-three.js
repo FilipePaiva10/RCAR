@@ -38,7 +38,7 @@ controls.enableDamping = true;
 
 const dracoLoader = new DRACOLoader();
 
-dracoLoader.setDecoderPath( '../../../three.js-master/examples/jsm/libs/draco/gltf/' );
+dracoLoader.setDecoderPath( 'three/addons/libs/draco/gltf/' );
 
 const loader = new GLTFLoader();
 loader.setDRACOLoader( dracoLoader );

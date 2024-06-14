@@ -1,6 +1,6 @@
 {
     "imports": {
-        "three": "../../../three.js-master/build/three.module.js",
-        "three/addons/": "../../../three.js-master/examples/jsm/"
+        "three": "https://unpkg.com/three@0.156.0/build/three.module.js",
+        "three/addons/": "https://unpkg.com/three@0.156.0/examples/jsm/"
     }
 }
