@@ -4,8 +4,8 @@ const app = express();
 
 app.use(function (req, res, next) {
     res.setHeader(
-      'Content-Security-Policy',
-      "default-src 'self'; font-src 'self'; img-src 'self'; script-src 'self'; style-src 'self'; frame-src 'self'"
+      'Content-Security-Policy-Report-Only',
+      "default-src * self blob: data: gap:; style-src * self 'unsafe-inline' blob: data: gap:; script-src * 'self' 'unsafe-eval' 'unsafe-inline' blob: data: gap:; object-src * 'self' blob: data: gap:; img-src * self 'unsafe-inline' blob: data: gap:; connect-src self * 'unsafe-inline' blob: data: gap:; frame-src * self blob: data: gap:;"
     );
     next();
 });
